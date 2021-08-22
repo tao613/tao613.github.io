@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>news on Pingshan Art Musuem</title>
+    <link>/categories/news/</link>
+    <description>Recent content in news on Pingshan Art Musuem</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="/categories/news/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>/program/anniversary/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/program/anniversary/</guid>
+      <description>&amp;ldquo;No one would have imagined that the Pingshan Art Museum would mark the first anniversary of its new establishment on this bleak March day. It&amp;rsquo;s a moment to remember. Each person, each institution, is trying to adjust itself toward the summer of unknown and hope. We stand at this waypoint, looking back, looking forward. We record, contemplate, imagine and celebrate with art. Life goes on, art accompanies, and we appreciate the attention and help of friends in the past year.</description>
+    </item>
+    
+  </channel>
+</rss>

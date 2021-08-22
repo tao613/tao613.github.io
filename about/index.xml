@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Abouts on Pingshan Art Musuem</title>
+    <link>/about/</link>
+    <description>Recent content in Abouts on Pingshan Art Musuem</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="/about/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>about PAM</title>
+      <link>/about/intro/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/about/intro/</guid>
+      <description>The Pingshan Art Museum (PAM) is situated in Shenzhen Pingshan Culture Quarter, with a total area of 9,900 square meters. With an open-ended approach for artistic exploration, PAM is concerned about the cross-boundaries integration and fission of a range of areas. That include technology, media, environment in the changing society of the times. By putting forward different forms and expressions in space, PAM preserves, collects and disseminates the vitality and vision of art.</description>
+    </item>
+    
+    <item>
+      <title>architecture</title>
+      <link>/about/architecture/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/about/architecture/</guid>
+      <description>The architecture was commissioned in 2014 and designed by renowned Chinese architect DONG Gong. Part of the building&amp;rsquo;s ground floor is elevated, its design intersperses different functions within the edifice. This allows certain operations to remain as active urban spaces that draw people through even after the museum is closed. The design of PAM not only serves functionally as a temple of art, but also a space that provides serenity in the union of art, spirit and city.</description>
+    </item>
+    
+    <item>
+      <title>art community from contemporary to vernacular</title>
+      <link>/about/community/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/about/community/</guid>
+      <description>The latest Pingshan Art Museum is an addition to the Pingshan Art Cluster, which consists of the PAM (current expansion), the old Pingshan Art Museum, Pingshan Sculpture Creative Park, Dawan Shiju, and Golden Turtle Nature Study Room. These art spaces of diverse orientation, attract local and international artists and audiences to promote artistic interaction, collaboration and development.</description>
+    </item>
+    
+    <item>
+      <title>culture quarter</title>
+      <link>/about/cluster/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/about/cluster/</guid>
+      <description>Pingshan Culture Quarter is a major public cultural infrastructure in Shenzhen, a project of Pingshan District to create a cultural high ground to the east of the city. It aims to advance cultural development, promote cultural benefits to people and improve the functional quality of the city. This new cultural landmark is made up of a theater, library, art museum, exhibition hall, cultural and creative experience hall, conference center, book city, cinema and other venues, integrating performances, readings, public art exhibitions, arts experiences, conferences and other cultural functions.</description>
+    </item>
+    
+  </channel>
+</rss>

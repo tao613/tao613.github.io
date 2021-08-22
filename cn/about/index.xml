@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Abouts on 坪山美术馆</title>
+    <link>/cn/about/</link>
+    <description>Recent content in Abouts on 坪山美术馆</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="/cn/about/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>关于坪山美术馆 PAM</title>
+      <link>/cn/about/intro/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/cn/about/intro/</guid>
+      <description>坪山美术馆位于深圳的坪山区文化聚落，总建筑面积9900平方米。以 “打开世界， 超越边界——”作为艺术探讨的出发点，坪山美术馆关注时代社会变迁中，科技、 媒介、环境、思想、人性带给艺术的跨界融合与裂变，尤其关注艺术在空间中的不同形态与表现， 保存、收藏、传播当代艺术的能量与远见，期待通过将独特的观展体验、学习经验、在线在地的方式，把当代艺术产生的心灵震撼与创意激发带给在地以及国内国际的观众，促进国际间的当代艺术文化交流。同时，作为中国第一家区级当代美术馆，坪山美术馆是坪山文化的发动机， 拥有一套完善的美术馆研究、典藏、展览、教育团队和系统，正积极探索一条以理事会、基金会、 学术委员会为核心的国有美术馆的体制创新与专业发展道路。</description>
+    </item>
+    
+    <item>
+      <title>坪山文化聚落</title>
+      <link>/cn/about/cluster/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/cn/about/cluster/</guid>
+      <description>坪山文化聚落是深圳市重要公共文化设施，是坪山区打造东部文化高地，推进文化事业跨越发展、实施文化惠民、提升城区功能品质的标志性工程。由大剧院、图书馆、美术馆、展览馆、文创体验馆、会议中心、书城、影城等场馆组成，是集文艺演出、文化阅读、公共艺术展览、文化体验、高端会议等多种文化功能于一体的深圳东部文化新地标。</description>
+    </item>
+    
+    <item>
+      <title>建筑设计</title>
+      <link>/cn/about/architecture/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/cn/about/architecture/</guid>
+      <description>坪山美术馆由中国著名建筑师董功于2014年受委任设计。建筑风格现代开放，设计了局部的架空层，将馆内不同的功能穿插置入，使部分功能在展馆关闭后仍能作为一个积极的城市场所，吸引着人们穿行其中。坪山美术馆的设计希望关注人的精神需求，塑造市民的文化体验。建筑不仅是功能上艺术的殿堂，也是为艺术及精神的的结合寻求静谧的精神空间。</description>
+    </item>
+    
+    <item>
+      <title>艺术群落:从当代到地方文化</title>
+      <link>/cn/about/community/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/cn/about/community/</guid>
+      <description>跨越国际当代艺术与在地历史文化，最新的坪山美术馆是坪山艺术群落的主要部分，并由坪山美术馆（老馆）、坪山雕塑艺术创意园、大万世居、金龟自然书房等组成。不同面向的艺术空间凝聚本地与国际艺术家和观众，促进艺术互动、合作与发展。</description>
+    </item>
+    
+  </channel>
+</rss>

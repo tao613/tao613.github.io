@@ -1,0 +1,141 @@
+@import 'variables';
+@import 'include-media';
+
+// ------------- typeface ------------- 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li {
+  .en {
+    font-family: $oswald;
+    letter-spacing: 0.5px;
+  }
+  .cn {
+    font-family: $noto;
+    letter-spacing: 0.5px;
+  }
+}
+
+p,
+span {
+  .en {
+    font-family: $roboto;
+    font-size: 20px;
+  }
+  .cn {
+    font-family: $noto;
+    word-break: break-all;
+  }
+}
+
+.enBox, 
+.en {
+  h1,h2,h3,h4,h5,h6,button {
+    font-family: $oswald;
+  }
+  p, span {
+    font-family: $roboto;
+  }
+}
+
+.cnBox, 
+.cn {
+  h1,h2,h3,h4,h5,h6,p,span {
+    font-family: $noto;
+  }
+}
+
+address {
+  font-style: normal;
+}
+
+.download {
+  .en {
+    font-family: $oswald;
+  }
+  .cn {
+    font-family: $noto;
+  }
+}
+
+// ------------- title cases -------------
+.navLink, 
+.foot-head, 
+.landingSlogan,
+.onBox>h3,
+.enBox>h2,
+.homeBtn,
+.download
+.statu {
+  text-transform: uppercase;
+}
+
+.onBox>h5,
+.underConstruction {
+  text-transform: capitalize;
+}
+
+// ------------- font size -------------
+.navLink, .homeBtn, .foot-head, .download {
+  .en {
+    font-size: 20px;
+    font-weight: 400;
+    @include media('≤tablet') {
+      font-size: 22px;
+    }
+  }
+  .cn {
+    font-size: 19px;
+    font-weight: 300;
+    @include media('≤tablet') {
+      font-size: 20px;
+      font-weight: 400;
+    }
+  }
+}
+
+.foot-content {
+  .en {
+    font-size: 14px;
+  }
+  .cn {
+    font-size: 13px;
+  }
+}
+
+.enBox, .cnBox {
+  h2,h3,h4,h5,p {
+    font-weight: 300;
+  }
+  h2 {
+    font-size: 35px;
+    line-height: 1.2;
+  }
+  h3 {
+    font-size: 28px;
+    font-weight: 300;
+    letter-spacing: 3px;
+    line-height: 1;
+  }
+  span {
+    font-size: 20px;
+  }
+  h4 {
+    font-size: 16px;
+  }
+  h5 {
+    font-size: 16px;
+  }
+  p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+// ------------- text-decoration -------------
+.navLink {
+  text-decoration: none;
+}
