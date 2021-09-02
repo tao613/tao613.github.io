@@ -494,7 +494,7 @@ footer .social {
   grid-template-columns: 16vw repeat(2, 1fr);
   grid-template-rows: auto;
   grid-template-areas: "side logotype landingBox";
-  background-image: url("/img/landing/tt2_h.jpg");
+  background-image: url("/img/landing/tt_landing.jpg");
   min-height: 500px;
   background-position: center;
   background-repeat: no-repeat;
