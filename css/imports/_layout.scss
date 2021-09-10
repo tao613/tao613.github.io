@@ -208,6 +208,7 @@ footer {
 
   .homeBtn, .landingSlogan, .underConstruction {
     margin-bottom: 5vh;
+    color: #3f3f3f;
     @include media("≤tablet") {
       margin-bottom: 3vh;
     }
