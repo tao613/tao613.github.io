@@ -648,7 +648,7 @@ footer .social {
   grid-template-columns: 16vw auto;
   grid-template-rows: auto;
   grid-template-areas: "side onBox";
-  background-image: url("/img/onnow/pagoda.jpg");
+  background-image: url("/img/onnow/onnow_new.jpg");
   min-height: 500px;
   background-position: center;
   background-repeat: no-repeat;
