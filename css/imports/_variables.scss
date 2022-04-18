@@ -1,0 +1,122 @@
+// debug ----------------------
+@mixin debug1 {
+  border: 2px solid red;
+}
+
+@mixin debug2 {
+  border: 2px solid green;
+}
+
+// typeface ----------------------
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100;300;400;500;700;900&family=Oswald:wght@200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+$oswald: 'Oswald', sans-serif;
+$roboto: 'Roboto', sans-serif;
+$noto: 'Noto Sans SC', sans-serif;
+
+// color ----------------------
+$yellow0: rgba(237, 161, 60, 1.00);
+// $yellow0: rgba(227, 61, 53, 1.00);
+$red: rgba(227, 61, 53, 1.00);
+$grey0: rgba(89, 87, 87, 1.00);
+$grey1:rgba(113, 113, 112, 1.00);
+$grey2:rgba(166, 166, 165, 1.00);
+$grey4: rgba(219, 219, 219, 1.00);
+$grey6:rgba(237, 237, 237, 1.00);
+$lscolor: #3f3f3f;
+
+// divider ----------------------
+$divider1: 0.1px solid rgba(89, 87, 87, 1.00);
+$divider2: 0.1px solid rgba(237, 237, 237, 1.00);
+
+// margin ----------------------
+$textMargin: 8vh 2vw 2vw;
+$desktop-sideMargin: 5vw;
+$desktop-miniMargin: 3vw;
+$mobile-sideMargin: 5vw;
+$desktop-nav-width: 16vw;
+$desktop-slides-width: 45vw;
+
+// --------- grid areas ------------
+$grid-areas: (
+    logotype: logotype,
+    landingBox: landingBox,
+    introBox: introBox,
+    introImg: introImg,
+    communityBoxA: communityBoxA,
+    communityBoxB: communityBoxB,
+    clusterBox: clusterBox,
+    archBox: archBox,
+    sidebar: side,
+    title: title,
+    dates: dates,
+    status: status,
+    optime: optime,
+    categories: categories,
+    program-body: body,
+    program-carousel: slides,
+);
+
+@each $name, $area in $grid-areas {
+    .#{$name} {
+        grid-area: $area;
+    }
+}
+
+// mixin ----------------------
+@mixin mobile-block-grid {
+  @include media ("≤tablet") {
+    grid-template-columns: 70vw 30vw;
+    grid-template-rows: auto auto 40px 3vh auto;
+    grid-template-areas: 
+      "slides slides"
+      "title title"
+      "dates status"
+      "categories categories"
+      "body body";
+  }
+}
+
+@mixin flexbox() {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+@mixin flex($values) {
+  -webkit-box-flex: $values;
+  -moz-box-flex: $values;
+  -webkit-flex: $values;
+  -ms-flex: $values;
+  flex: $values;
+}
+
+@mixin order($val) {
+  -webkit-box-ordinal-group: $val;
+  -moz-box-ordinal-group: $val;
+  -ms-flex-order: $val;
+  -webkit-order: $val;
+  order: $val;
+}
+
+.wrapper {
+  @include flexbox();
+}
+
+.item {
+  @include flex(1 200px);
+  @include order(2);
+}
+
+// parallex ------------------
+@mixin parallax {
+  min-height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}

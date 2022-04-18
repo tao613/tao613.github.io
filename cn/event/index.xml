@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>坪山美术馆</title>
+    <link>https://pinghsanartmuseum.org/cn/event/</link>
+    <description>Recent content on 坪山美术馆</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 27 Jan 2021 01:22:36 +0800</lastBuildDate><atom:link href="https://pinghsanartmuseum.org/cn/event/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>四季学术沙龙-秋: 行动想象</title>
+      <link>https://pinghsanartmuseum.org/cn/event/01-4sea1/</link>
+      <pubDate>Wed, 27 Jan 2021 01:22:36 +0800</pubDate>
+      
+      <guid>https://pinghsanartmuseum.org/cn/event/01-4sea1/</guid>
+      <description>四季学术沙龙是坪山美术馆发起和主办、《打边炉》联合策划，以春、夏、秋、冬四季为周期的常设性学术活动。</description>
+    </item>
+    
+    <item>
+      <title>年度艺术大展“共时”</title>
+      <link>https://pinghsanartmuseum.org/cn/event/01-syn/</link>
+      <pubDate>Wed, 27 Jan 2021 01:18:52 +0800</pubDate>
+      
+      <guid>https://pinghsanartmuseum.org/cn/event/01-syn/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

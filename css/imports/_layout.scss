@@ -1,0 +1,530 @@
+@import 'variables';
+@import 'include-media';
+
+@mixin bottom-padding {
+  padding-bottom: 2vh;
+  padding-top: 2vh;
+}
+
+// preset
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  object-fit: contain;
+  box-sizing: border-box;
+}
+
+// layout
+.desktop-nav {
+  position: fixed;
+  top: 2vw;
+  left: 2vw;
+  width: 12vw;
+
+  @include media('≤tablet') {
+    visibility: hidden;
+  }
+
+  #logo {
+    fill-rule: nonzero;
+  }
+
+  hr {
+    border: 0.1px solid $divider2;
+    margin: 4vw 0;
+  }
+
+  #menu {
+    list-style-type: none;
+  }
+
+  li {
+    margin-bottom: 3vh;
+  }
+}
+
+.mobile-nav {
+  display: none;
+  @include media('≤tablet') {
+    display: contents;
+    // float: right;
+    .overlay {
+      /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+      height: 100%;
+      width: 0;
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Sit on top */
+      left: 0;
+      top: 0;
+      background-color: rgb(0,0,0); /* Black fallback color */
+      background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+      overflow-x: hidden; /* Disable horizontal scroll */
+      transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+    }
+    .overlay-content {
+      position: relative;
+      top: 25%; /* 25% from the top */
+      width: 100%; /* 100% width */
+      text-align: center; /* Centered text/links */
+      margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+    }
+    .overlay a {
+      padding: 8px;
+      text-decoration: none;
+      font-size: 36px;
+      color: #818181;
+      display: block; /* Display block instead of inline */
+      transition: 0.3s; /* Transition effects on hover (color) */
+    }
+    .overlay .closebtn {
+      position: absolute;
+      top: 20px;
+      right: 45px;
+      font-size: 60px;
+    }
+    
+    /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+    @media screen and (max-height: 450px) {
+      .overlay a {font-size: 20px}
+      .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+      }
+    }
+    .mobile-logo {
+      position: fixed;
+      width: 15vw;
+      margin-left: 80vw;
+      margin-top: 2vh;
+      margin-right: 2vh;
+      // @include debug1;
+    }
+  }
+}
+
+footer {
+  position: relative;
+  display: grid;
+  z-index: -1;
+  grid-template-columns: $desktop-nav-width repeat(3, 1fr);
+  grid-template-areas:
+    "side visit dir connect";
+  @include media("≤tablet") {
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+      "visit"
+      "dir"
+      "connect";
+  }
+  
+  .visit {
+    grid-area: visit;
+  }
+
+  .direction {
+    grid-area: dir;
+  }
+
+  .connect {
+    grid-area: connect;
+  }
+
+  .visit,
+  .direction,
+  .connect {
+    padding: 2vw;
+    @include media('≤tablet') {
+      padding: $mobile-sideMargin $mobile-sideMargin;
+    }
+  }
+
+  hr {
+    border: 0.1px solid $divider2;
+    margin: 0.5vw 0 1.5vw;
+    @include media('≤tablet') {
+      margin: 0.5vw 0 1.5vw;;
+    }
+  }
+
+  .social {
+    width: 40px;
+    margin: inherit;
+    margin-top: 1vh;
+  }
+}
+
+.landing,
+.about,
+.onnow,
+.blockB,
+.blockA {
+  display: grid;
+  position: relative;
+  width: 100vw;
+  min-height: 100vh;
+  z-index: -1;
+}
+
+.landing {
+  grid-template-columns: $desktop-nav-width repeat(2, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas:
+    "side logotype landingBox";
+  background-image: url("/img/landing/pagoda.jpg");
+  @include parallax;
+  background-blend-mode: darken;
+  @include media("≤tablet") {
+    background-attachment: local;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas:
+      "logotype"
+      "landingBox";
+      background-position: 45% 55%;
+    }
+    
+  .logotype {
+    padding: 30vh $desktop-sideMargin;
+    align-self: center;
+    @include media("≤tablet") {
+      padding: 8vh 20vw 0 $mobile-sideMargin;
+    }
+  }
+  .landingBox {
+    padding: 30vh $desktop-miniMargin;
+    text-align: center;
+    @include media("≤tablet") {
+      padding: 10vh $mobile-sideMargin;
+      text-align: left;
+    }
+  }
+
+  .homeBtn, .landingSlogan, .underConstruction {
+    margin-bottom: 5vh;
+    color: #3f3f3f;
+    @include media("≤tablet") {
+      margin-bottom: 3vh;
+    }
+  }
+}
+
+.about {
+  grid-template-columns: $desktop-nav-width repeat(6, 1fr);
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas:
+    "side introBox introBox introBox introImg introImg introImg"
+    "side communityBoxA communityBoxA communityBoxA communityBoxB communityBoxB communityBoxB"
+    "side clusterBox clusterBox clusterBox archBox archBox archBox";
+
+  @include media("≤tablet") {
+    grid-template-columns: auto;
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas:
+      "introImg"
+      "introBox"
+      "communityBoxA"
+      "communityBoxB"
+      "clusterBox"
+      "archBox";
+  }
+
+  h2 {
+    @include bottom-padding;
+  }
+
+  .introBox {
+    padding: $desktop-sideMargin $desktop-miniMargin;
+
+    @include media("≤tablet") {
+      margin: $mobile-sideMargin;
+    }
+  }
+
+  .introImg {
+    width: 100%;
+    padding-right: $desktop-miniMargin;
+    padding-top: calc(#{$desktop-miniMargin} * 2);
+
+    @include media("≤tablet") {
+      padding: 0;
+    }
+  }
+
+  .communityBoxA {
+    padding: $desktop-sideMargin $desktop-miniMargin;
+
+    @include media("≤tablet") {
+      padding: $mobile-sideMargin;
+    }
+
+    .artV {
+      width: 90%;
+      display: block;
+      padding-bottom: $desktop-miniMargin;
+      float: right;
+    }
+
+    h2 {
+      clear: both;
+      text-align: right;
+    }
+  }
+
+  .communityBoxB {
+    padding: $desktop-sideMargin $desktop-miniMargin $desktop-sideMargin 0;
+
+    @include media("≤tablet") {
+      padding: 0 $mobile-sideMargin;
+    }
+
+    .artC {
+      width: 90%;
+      float: left;
+      padding-top: 3vh;
+      @include media('≤tablet') {
+        padding-bottom: 10vh;
+      }
+    }
+
+    p {
+      width: 90%;
+      float: left;
+    }
+  }
+
+  .clusterBox {
+    padding: $desktop-sideMargin $desktop-miniMargin;
+
+    @include media("≤tablet") {
+      padding: $mobile-sideMargin;
+      img {
+        width: 80%;
+      }
+    }
+    
+  }
+
+  .archBox {
+    padding: $desktop-sideMargin $desktop-miniMargin;
+
+    p {
+      padding-bottom: 2vh;
+    }
+
+    @include media("≤tablet") {
+      padding: $mobile-sideMargin;
+      img {
+        margin-bottom: 10vh;
+      }
+    }
+  }
+}
+
+.onnow {
+  // height: 20vh;
+  grid-template-columns: $desktop-nav-width auto;
+  grid-template-rows: auto;
+  grid-template-areas: "side onBox";
+  background-image: url("/img/onnow/pagoda.jpg");
+  @include parallax;
+  background-blend-mode: darken;
+
+  @include media("≤tablet") {
+    background-attachment: local;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "onBox";
+    .sideA {
+      display: none;
+    }
+  }
+  
+  .onBox {
+    grid-area: onBox;
+    padding: 20vh $desktop-miniMargin;
+    text-align: center;
+    @include media('≤tablet') {
+      padding: 20vh $mobile-sideMargin;
+    }
+  }
+}
+
+.blockB {
+  grid-template-columns: $desktop-nav-width repeat(2, 1fr) $desktop-slides-width;
+  grid-template-rows: 120px 4vh 4vh auto 4vh auto;
+  grid-template-areas:
+    "side title title slides"
+    "side dates status slides"
+    "side optime categories slides"
+    "side body body slides"
+    "side body body . "
+    "side body body caption";
+  @include mobile-block-grid;
+}
+
+.blockA {
+  grid-template-columns: $desktop-nav-width $desktop-slides-width repeat(2, 1fr);
+  grid-template-rows: 120px 4vh 4vh auto 4vh auto;
+  grid-template-areas:
+    "side slides title title "
+    "side slides dates status "
+    "side slides optime categories "
+    "side slides body body "
+    "side . body body"
+    "side caption body body";
+  @include mobile-block-grid;
+}
+
+.sidebar {
+  @include media("≤tablet") {
+      display: none;
+  }
+}
+
+.title {
+  // margin: $desktop-miniMargin $desktop-miniMargin 0;
+  padding: 2vw 2vw;
+  @include media("≤tablet") {
+      margin: $mobile-sideMargin $mobile-sideMargin 0;
+  }
+}
+
+.dates {
+  margin-left: 1.5vw;
+  padding-left: 0.5vw;
+  @include media("≤tablet") {
+      margin-left: $mobile-sideMargin;
+      padding: 2vw;
+  }
+}
+
+.status {
+  text-align: right;
+  margin-right: 1.5vw;
+  padding-right: 0.5vw;
+
+  @include media("≤tablet") {
+      margin-right: $mobile-sideMargin;
+      padding: 2vw;
+  }
+}
+
+.optime {
+  margin-left: 1.5vw;
+  padding-left: 0.5vw;
+  @include media("≤tablet") {
+      visibility: hidden;
+  }
+}
+
+.categories {
+  text-align: right;
+  margin-right: 1.5vw;
+  padding-right: 0.5vw;
+
+  @include media("≤tablet") {
+    margin-right: $mobile-sideMargin;
+    padding: 2vw;
+  }
+}
+
+.program-body {
+  display: flex;
+  flex-flow: column nowrap;
+  align-content: flex-start;
+  margin: 5vh $desktop-miniMargin;
+
+  @include media("≤tablet") {
+    margin: 5vh $mobile-sideMargin 0;
+  }
+}
+
+// read more collapsible
+.foreword {
+  order: 1;
+}
+
+.moreBtn {
+  order: 2;
+  align-self: flex-end;
+  padding: 5px 8px;
+  margin-bottom: 8px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  font-size: 15px;
+  font-weight: 400;
+
+  .active,
+  &:hover {
+      background-color: $yellow0;
+  }
+}
+
+.collapsible {
+  order: 3;
+  // margin: 0 0 0 0;
+  grid-area: body;
+  display: none;
+  overflow: hidden;
+
+  p {
+      margin-bottom: 10px;
+  }
+}
+
+// slideshow
+.program-carousel {
+  position: relative;
+
+  // height: 100%;
+  // .carousel-cell {
+  //     // height: 100%;
+  //     // align-items: center;
+  //     // justify-content: center;
+  //     // object-fit: contain;
+  // }
+
+  .slideImg {
+      width: 100%;
+      position: relative;
+      object-fit: contain;
+  }
+
+  .flickity-viewport {
+      transition: height 0.2s;
+  }
+
+  .flickity-button {
+      background: transparent;
+  }
+
+  .flickity-prev-next-button {
+      width: 40px;
+      height: 40px;
+  }
+
+  .flickity-button-icon {
+      fill: $grey6;
+      fill-opacity: .8;
+  }
+}
+
+.imgCaption {
+  grid-area: caption;
+  padding: $desktop-sideMargin;
+  font-size: 10px;
+
+  @include media("≤tablet") {
+      visibility: hidden;
+  }
+}

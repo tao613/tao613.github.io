@@ -1,0 +1,89 @@
+@import 'variables';
+@import 'include-media';
+
+.foot-head,
+.foot-content {
+  color: $grey4;
+}
+
+.social {
+  fill: $grey6;
+}
+.email {
+  color: $grey6;
+}
+
+.onBox,
+.homeBtn,
+.underConstruction {
+  color: $grey6;
+}
+
+.landingSlogan{
+  color: $lscolor;
+}
+
+.visit,
+.direction,
+.connect {
+  background-color: $grey1;
+}
+
+.sideA {
+  background-color: $grey6;
+}
+
+.sideB {
+  background-color: $grey4;
+}
+
+#logo {
+  fill: $grey0;
+}
+
+.logotype {
+  fill: $grey6;
+}
+
+.navLink {
+  &:link {
+    color: $grey1;
+  }
+
+  &:hover {
+    color: $yellow0;
+  }
+
+  a:active {
+    color: $yellow0;
+  }
+
+  &:visited {
+    color: $grey2;
+  }
+}
+
+.cnBox,
+.enBox {
+  h2 {
+    color: $yellow0;
+  }
+
+  p {
+    color: $grey1;
+  }
+}
+
+.dates,
+.status {
+  color: $grey6;
+}
+
+.optime,
+.categories {
+  color: $grey1;
+}
+
+.download {
+  color: $yellow0;
+}

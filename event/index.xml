@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pingshan Art Musuem</title>
+    <link>https://pinghsanartmuseum.org/event/</link>
+    <description>Recent content on Pingshan Art Musuem</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 27 Jan 2021 01:22:36 +0800</lastBuildDate><atom:link href="https://pinghsanartmuseum.org/event/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>synchronicity</title>
+      <link>https://pinghsanartmuseum.org/event/01-syn/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pinghsanartmuseum.org/event/01-syn/</guid>
+      <description>Coined synchronicity by the Swiss psychologist Carl Gustav Jung (1875-1961), contemplations on meaningful coincidences and timelessness are reflected upon at Synchronicity, the first contemporary art exhibition of Pingshan Art Museum.</description>
+    </item>
+    
+    <item>
+      <title>Four Seasons Salon-Fall: Action  Imagination</title>
+      <link>https://pinghsanartmuseum.org/event/01-4sea1/</link>
+      <pubDate>Wed, 27 Jan 2021 01:22:36 +0800</pubDate>
+      
+      <guid>https://pinghsanartmuseum.org/event/01-4sea1/</guid>
+      <description>Four Seasons Salon, an academic salon initiated and hosted by the Pingsan Art Museum and co-curated by Da Bian Lu, an art media platform, who will be hosting the recurring event throughout four seasons.。</description>
+    </item>
+    
+  </channel>
+</rss>
